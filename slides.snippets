@@ -1,0 +1,12 @@
+<@@pygmented@display@0
+,lang=scala
+class Net {
+    def Net(netParams: NetParams): Net
+    def setTrainingData(data: Iterator[(NDArray,Int)])
+    def setValidationData(data: Iterator[(NDArray,Int)])
+    def train(numSteps: Int)
+    def test(numSteps: Int): Float
+    def setWeights(weights: WeightCollection)
+    def getWeights(): WeightCollection
+}
+>@@pygmented@display@0

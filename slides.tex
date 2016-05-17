@@ -266,7 +266,7 @@ for (i <- 1 to 1000) {
 
 \section{Architecture Discussion}
 
-\begin{frame}{Problems in distributed optimization}
+\begin{frame}{Concerns in distributed optimization: communication}
     \begin{block}{Inter-machine communication bottleneck}
         Worker machines must frequently read and write the global shared
         parameters.
@@ -283,7 +283,7 @@ for (i <- 1 to 1000) {
     \end{alertblock}
 \end{frame}
 
-\begin{frame}{Problems in distributed optimization}
+\begin{frame}{Concerns in distributed optimization: stragglers}
     \begin{block}{The straggler problem}
         Many algorithms require synchronization barriers, which are rate-limited
         by the slowest machines.
